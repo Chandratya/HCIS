@@ -202,278 +202,284 @@ if($getUser['role']!='admin'){
             
             <!-- MAIN CONTENT-->
             <div class="main-content" style="background-color: white;">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="overview-wrap">
-                                    <h2 class="title-1">Employee Demographic</h2>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m-t-25">
-                            <div class="col-sm-6 col-lg-12">
-                                <div class="overview-item overview-item--c1">
-                                    <div class="overview__inner" style="height: 260px;">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                
-                                            </div>
-                                            <div class="text">
-                                                
-                                                <span style="color: white">Trend Employee /2018<br></span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart1"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--<div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c3">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i class="zmdi zmdi-calendar-note"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>90</h2>
-                                                <span>Magang</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart3"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
+<!--                <div class="section__content section__content--p30">-->
+<!--                    <div class="container-fluid">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-12">-->
+<!--                                <div class="overview-wrap">-->
+<!--                                    <h2 class="title-1">Employee Demographic</h2>-->
+<!--                                   -->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row m-t-25">-->
+<!--                            <div class="col-sm-6 col-lg-12">-->
+<!--                                <div class="overview-item overview-item--c1">-->
+<!--                                    <div class="overview__inner" style="height: 260px;">-->
+<!--                                        <div class="overview-box clearfix">-->
+<!--                                            <div class="icon">-->
+<!--                                                -->
+<!--                                            </div>-->
+<!--                                            <div class="text">-->
+<!--                                                -->
+<!--                                                <span style="color: white">Trend Employee /2018<br></span>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="overview-chart">-->
+<!--                                            <canvas id="widgetChart1"></canvas>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            -->
+<!--                            <!--<div class="col-sm-6 col-lg-3">-->
+<!--                                <div class="overview-item overview-item--c3">-->
+<!--                                    <div class="overview__inner">-->
+<!--                                        <div class="overview-box clearfix">-->
+<!--                                            <div class="icon">-->
+<!--                                                <i class="zmdi zmdi-calendar-note"></i>-->
+<!--                                            </div>-->
+<!--                                            <div class="text">-->
+<!--                                                <h2>90</h2>-->
+<!--                                                <span>Magang</span>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="overview-chart">-->
+<!--                                            <canvas id="widgetChart3"></canvas>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->-->
+<!---->
+<!--                             <div class="col-sm-6 col-lg-12">-->
+<!--                                <div class="overview-item overview-item--c2">-->
+<!--                                    <div class="overview__inner" style="height: 260px;">-->
+<!--                                        <div class="overview-box clearfix">-->
+<!--                                            <div class="icon">-->
+<!--                                                -->
+<!--                                            </div>-->
+<!--                                            <div class="text">-->
+<!--                                               -->
+<!--                                                <span style="color: white">Employee Status /2018</span>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="overview-chart">-->
+<!--                                            <canvas id="widgetChart4"></canvas>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <center>-->
+<!--                         <div align="center" style="width: 463px; float: left; height: 300px; ">-->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Employee by Location</h3>-->
+<!--                                        <canvas id="lineChart"></canvas>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            </center>-->
+<!--                            <center>-->
+<!--                            <div class="" style="width: 460px; float: left; margin-left: 35px;">-->
+<!--                                <div class="au-card m-b-30" id="genderJanuari">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 17px" class="title-2 m-b-40" style="float: left;">Gender (January) </h3>-->
+<!--                                        <ul class="nav nav-tabs" style="float: right;">-->
+<!--                                           -->
+<!--                                            <li class="nav-item dropdown">-->
+<!--                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filter-->
+<!--                                                    <span class="caret"></span>-->
+<!--                                                </a>-->
+<!--                                                <div class="dropdown-menu">-->
+<!--                                                  <a id="jan" class="dropdown-item" href="index.php">January</a>-->
+<!--                                                    <a id="feb" class="dropdown-item" href="indexfeb.php">February</a>-->
+<!--                                                    <a id="mar" class="dropdown-item" href="indexmar.php">March</a>-->
+<!--                                                    <a id="apr" class="dropdown-item" href="indexapr.php">April</a>-->
+<!--                                                    <a id="apr" class="dropdown-item" href="indexmay.php">Mei</a>-->
+<!--                                                    <a id="apr" class="dropdown-item" href="indexjun.php">Juni</a>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            -->
+<!--                                        </ul>-->
+<!---->
+<!--                                        <canvas id="genderjan"></canvas>-->
+<!--                                       -->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </center>-->
+<!--                                -->
+<!---->
+<!--                            </div>-->
+<!---->
+<!--                         <div class="col-lg-12" style="float: left;" >-->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Employee by Job Group</h3>-->
+<!--                                        <canvas id="barChart"></canvas>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Employee by Business Unit</h3>-->
+<!--                                        <canvas id="turnover"></canvas>-->
+<!--                                    </div>-->
+<!--                                    -->
+<!--                                </div>-->
+<!--                            </div>-->
+<!---->
+<!--                            <div class="col-lg-12" align="center" style="width: 500px; float: left;">-->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Trend Employee Turn Over</h3>-->
+<!--                                        <canvas id="totalturn"></canvas>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!---->
+<!--                            <div class="col-lg-12" align="center" style="width: 475px; float: left;">-->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                       -->
+<!--                                        Data Table:-->
+<!--                                            <table border="1" width="200" align="center" style="text-align: center;">-->
+<!--                                                <tr>-->
+<!--                                                    <th style="width: 60px">Bulan</th>-->
+<!--                                                    <th>HO</th>-->
+<!--                                                    <th style="width: 40px">Site</th>-->
+<!--                                                    <th>Jumlah</th>-->
+<!---->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>Januari</td>-->
+<!--                                                    <td>1</td>-->
+<!--                                                    <td>2</td>-->
+<!--                                                    <td>3</td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>Februari</td>-->
+<!--                                                    <td>2</td>-->
+<!--                                                    <td>7</td>-->
+<!--                                                    <td>9</td>-->
+<!--                                                </tr>-->
+<!--                                                  <tr>-->
+<!--                                                    <td>Maret</td>-->
+<!--                                                    <td>1</td>-->
+<!--                                                    <td>13</td>-->
+<!--                                                    <td>14</td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>April</td>-->
+<!--                                                    <td>3</td>-->
+<!--                                                    <td>17</td>-->
+<!--                                                    <td>20</td>-->
+<!--                                                </tr>-->
+<!--                                                  <tr>-->
+<!--                                                    <td>Mei</td>-->
+<!--                                                    <td>3</td>-->
+<!--                                                    <td>14</td>-->
+<!--                                                    <td>17</td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <td>Juni</td>-->
+<!--                                                    <td>5</td>-->
+<!--                                                    <td>10</td>-->
+<!--                                                    <td>15</td>-->
+<!--                                                -->
+<!--                                            </table>-->
+<!---->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!---->
+<!--                            -->
+<!--                            -->
+<!--                        -->
+<!--                            -->
+<!--                        <div style="z-index: auto; float: left;">-->
+<!--                         <div class="" style="float: left; margin-left: 17px; margin-top: 0px;">-->
+<!--                            <div class="au-card m-b-30" id="genderJanuari" style="height: 305px; width: 470px;">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 class="title-2 m-b-40" style="float: left; margin-left: 100px; font-size: 17px;">Talent (Y/N) January</h3>-->
+<!--                                        <ul class="nav nav-tabs" style="float: right;">-->
+<!--                                           -->
+<!--                                            <li class="nav-item dropdown">-->
+<!--                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filter-->
+<!--                                                    <span class="caret"></span>-->
+<!--                                                </a>-->
+<!--                                                <div class="dropdown-menu">-->
+<!--                                                   <a id="jan" class="dropdown-item" href="index.php">January</a>-->
+<!--                                                    <a id="feb" class="dropdown-item" href="indexfeb.php">February</a>-->
+<!--                                                    <a id="mar" class="dropdown-item" href="indexmar.php">March</a>-->
+<!--                                                    <a id="apr" class="dropdown-item" href="indexapr.php">April</a>-->
+<!--                                                    <a id="apr" class="dropdown-item" href="indexmay.php">Mei</a>-->
+<!--                                                    <a id="apr" class="dropdown-item" href="indexjun.php">Juni</a>-->
+<!--                                                </div>-->
+<!--                                            </li>-->
+<!--                                            -->
+<!--                                        </ul>-->
+<!---->
+<!--                                        <canvas id="talentchart"></canvas>-->
+<!--                                       -->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                 -->
+<!--                           -->
+<!--                             -->
+<!--                            -->
+<!--                            </div>-->
+<!--                               <div class="au-card m-b-30" id="genderJanuari" style="height: 305px; width: 400px; float: left; margin-left: 30px;">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 class="title-2 m-b-40" style="font-size: 17px">Summary Employee Turn Over</h3>-->
+<!--                                        <canvas id="pieChart"></canvas>-->
+<!--                                    </div>-->
+<!--                                    -->
+<!--                                </div>-->
+<!---->
+<!--                            -->
+<!--                            <div class="col-lg-12" style="float: left;"><h4>Helpdesk :</h4>-->
+<!--                            <div class="col-lg-6" style="float: left;">-->
+<!---->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 16px" class="title-2 m-b-40">By Type (%)</h3>-->
+<!--                                        <canvas id="hd_type"></canvas>-->
+<!--                                    </div>-->
+<!--                                    -->
+<!--                                </div>-->
+<!--                            </div>-->
+<!---->
+<!--                            <div class="col-lg-6" style="float: left;">-->
+<!--                                <div class="au-card m-b-30">-->
+<!--                                    <div class="au-card-inner">-->
+<!--                                        <h3 style="font-size: 16px" class="title-2 m-b-40">By Status (%)</h3>-->
+<!--                                        <canvas id="hd_status"></canvas>-->
+<!--                                    </div>-->
+<!--                                    -->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            -->
+<!--                            </div>-->
+<!---->
+<!---->
+<!--                        -->
+<!--                        </div>-->
+<!--                            -->
+<!--                        -->
+<!--                         <div class="row" style="float: left; margin-top: 200px;" >-->
+<!--                            <div class="col-md-12">-->
+<!--                                <center>-->
+<!--                                <div class="copyright">-->
+<!--                                    <p>Copyright © 2018 TAP. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>-->
+<!--                                </div></center>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                             <div class="col-sm-6 col-lg-12">
-                                <div class="overview-item overview-item--c2">
-                                    <div class="overview__inner" style="height: 260px;">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                
-                                            </div>
-                                            <div class="text">
-                                               
-                                                <span style="color: white">Employee Status /2018</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart4"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <center>
-                         <div align="center" style="width: 463px; float: left; height: 300px; ">
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Employee by Location</h3>
-                                        <canvas id="lineChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            </center>
-                            <center>
-                            <div class="" style="width: 460px; float: left; margin-left: 35px;">
-                                <div class="au-card m-b-30" id="genderJanuari">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 17px" class="title-2 m-b-40" style="float: left;">Gender (January) </h3>
-                                        <ul class="nav nav-tabs" style="float: right;">
-                                           
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filter
-                                                    <span class="caret"></span>
-                                                </a>
-                                                <div class="dropdown-menu">
-                                                  <a id="jan" class="dropdown-item" href="index.php">January</a>
-                                                    <a id="feb" class="dropdown-item" href="indexfeb.php">February</a>
-                                                    <a id="mar" class="dropdown-item" href="indexmar.php">March</a>
-                                                    <a id="apr" class="dropdown-item" href="indexapr.php">April</a>
-                                                    <a id="apr" class="dropdown-item" href="indexmay.php">Mei</a>
-                                                    <a id="apr" class="dropdown-item" href="indexjun.php">Juni</a>
-                                                </div>
-                                            </li>
-                                            
-                                        </ul>
-
-                                        <canvas id="genderjan"></canvas>
-                                       
-                                    </div>
-                                </div>
-                            </center>
-                                
-
-                            </div>
-
-                         <div class="col-lg-12" style="float: left;" >
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Employee by Job Group</h3>
-                                        <canvas id="barChart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Employee by Business Unit</h3>
-                                        <canvas id="turnover"></canvas>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12" align="center" style="width: 500px; float: left;">
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 17px" class="title-2 m-b-40">Trend Employee Turn Over</h3>
-                                        <canvas id="totalturn"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12" align="center" style="width: 475px; float: left;">
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                       
-                                        Data Table:
-                                            <table border="1" width="200" align="center" style="text-align: center;">
-                                                <tr>
-                                                    <th style="width: 60px">Bulan</th>
-                                                    <th>HO</th>
-                                                    <th style="width: 40px">Site</th>
-                                                    <th>Jumlah</th>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Januari</td>
-                                                    <td>1</td>
-                                                    <td>2</td>
-                                                    <td>3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Februari</td>
-                                                    <td>2</td>
-                                                    <td>7</td>
-                                                    <td>9</td>
-                                                </tr>
-                                                  <tr>
-                                                    <td>Maret</td>
-                                                    <td>1</td>
-                                                    <td>13</td>
-                                                    <td>14</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>April</td>
-                                                    <td>3</td>
-                                                    <td>17</td>
-                                                    <td>20</td>
-                                                </tr>
-                                                  <tr>
-                                                    <td>Mei</td>
-                                                    <td>3</td>
-                                                    <td>14</td>
-                                                    <td>17</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Juni</td>
-                                                    <td>5</td>
-                                                    <td>10</td>
-                                                    <td>15</td>
-                                                
-                                            </table>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            
-                        
-                            
-                        <div style="z-index: auto; float: left;">
-                         <div class="" style="float: left; margin-left: 17px; margin-top: 0px;">
-                            <div class="au-card m-b-30" id="genderJanuari" style="height: 305px; width: 470px;">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40" style="float: left; margin-left: 100px; font-size: 17px;">Talent (Y/N) January</h3>
-                                        <ul class="nav nav-tabs" style="float: right;">
-                                           
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filter
-                                                    <span class="caret"></span>
-                                                </a>
-                                                <div class="dropdown-menu">
-                                                   <a id="jan" class="dropdown-item" href="index.php">January</a>
-                                                    <a id="feb" class="dropdown-item" href="indexfeb.php">February</a>
-                                                    <a id="mar" class="dropdown-item" href="indexmar.php">March</a>
-                                                    <a id="apr" class="dropdown-item" href="indexapr.php">April</a>
-                                                    <a id="apr" class="dropdown-item" href="indexmay.php">Mei</a>
-                                                    <a id="apr" class="dropdown-item" href="indexjun.php">Juni</a>
-                                                </div>
-                                            </li>
-                                            
-                                        </ul>
-
-                                        <canvas id="talentchart"></canvas>
-                                       
-                                    </div>
-                                </div>
-                                 
-                           
-                             
-                            
-                            </div>
-                               <div class="au-card m-b-30" id="genderJanuari" style="height: 305px; width: 400px; float: left; margin-left: 30px;">
-                                    <div class="au-card-inner">
-                                        <h3 class="title-2 m-b-40" style="font-size: 17px">Summary Employee Turn Over</h3>
-                                        <canvas id="pieChart"></canvas>
-                                    </div>
-                                    
-                                </div>
-
-                            
-                            <div class="col-lg-12" style="float: left;"><h4>Helpdesk :</h4>
-                            <div class="col-lg-6" style="float: left;">
-
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 16px" class="title-2 m-b-40">By Type (%)</h3>
-                                        <canvas id="hd_type"></canvas>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6" style="float: left;">
-                                <div class="au-card m-b-30">
-                                    <div class="au-card-inner">
-                                        <h3 style="font-size: 16px" class="title-2 m-b-40">By Status (%)</h3>
-                                        <canvas id="hd_status"></canvas>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                            </div>
-
-
-                        
-                        </div>
-                            
-                        
-                         <div class="row" style="float: left; margin-top: 200px;" >
-                            <div class="col-md-12">
-                                <center>
-                                <div class="copyright">
-                                    <p>Copyright © 2018 TAP. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
-                                </div></center>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-6 push-4">
+                        <canvas id="genderChart1" width="200" height="200"></canvas>
                     </div>
                 </div>
             </div>
@@ -506,6 +512,50 @@ if($getUser['role']!='admin'){
     </script>
 
     <!-- Main JS-->
+    <script type="text/javascript">
+        //Option Defalut untuk Global Chart
+        var chartOptions = {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    fontFamily: 'Poppins'
+                }
+
+            },
+            responsive: true
+        }
+        //Data Untuk Gender, awalnya kosong tapi setelah dijalankan method loadGenderChart() bakalan keisi.
+        var genderData = {};
+        //Aksi untuk load + nampilin chart
+        loadGenderChart();
+
+        //Fungsi untuk ngebuat Definisi Chart
+        function initGenderChart(){
+            var can = $('#genderChart1');
+            var ctx = can.get(0).getContext("2d");
+            var chart = new Chart(ctx, {type: 'pie', data: genderData, options: chartOptions});
+        }
+
+        //Load Data dari API dengan sistem AJAX method GET, filenya bisa dilihat di /APIDashboard.php
+        function loadGenderChart(){
+            //API: gender=all, month=jan/feb/juli ...
+            $.get('../APIDashboard.php?gender=all&month=jan', function(data){
+                //untuk ngeliat datanya di browser kalo pake chrome pake tombol F12
+                console.log(data[0]);
+                genderData = {
+                    datasets: [{
+                        data: [data[0].L, data[0].P],
+                        backgroundColor: ["cyan","pink"]
+                    }],
+                    labels: ["Male","Female"]
+                };
+                chartOptions.title = {display: true, text: 'Gender Statistic'};
+                // console.log(chartOptions);
+                initGenderChart();
+            });
+        }
+    </script>
+
     <script src="../js/main.js"></script>
 
 </body>
